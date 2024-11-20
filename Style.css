@@ -15,36 +15,48 @@ body {
     padding: 0;
 }
 
+/* Title Section */
+.title {
+    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* Navigation Bar */
 nav {
-    background-color: palevioletred;
+    background-color: #00509e;
     padding: 10px 0;
 }
 
-    nav ul {
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-    }
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+nav ul li {
+    margin: 0 15px;
+}
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-                font-weight: bold;
-                padding: 8px 15px;
-                border-radius: 5px;
-                transition: background 0.3s;
-            }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #0073e6;
+    transition: background 0.3s, transform 0.3s;
+}
 
-                nav ul li a:hover {
-                    background-color: #555;
-                }
+nav ul li a:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
 
 /* Header Section */
 header {
@@ -54,14 +66,14 @@ header {
     color: #fff;
 }
 
-    header h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
-    header p {
-        font-size: 1.2rem;
-    }
+header p {
+    font-size: 1.2rem;
+}
 
 /* Section Styles */
 section {
@@ -73,25 +85,25 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-    section h1 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-        border-bottom: 2px solid #0073e6;
-        padding-bottom: 5px;
-    }
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
 
-    section p,
-    section ul {
-        margin: 10px 0;
-        font-size: 1rem;
-    }
+section p,
+section ul {
+    margin: 10px 0;
+    font-size: 1rem;
+}
 
-    section ul {
-        list-style-type: disc;
-        padding-left: 20px;
-    }
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
 
-/* Footer (Optional) */
+/* Footer */
 footer {
     text-align: center;
     padding: 15px 0;
@@ -100,9 +112,9 @@ footer {
     margin-top: 20px;
 }
 
-    footer p {
-        margin: 0;
-    }
+footer p {
+    margin: 0;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -111,9 +123,9 @@ footer {
         align-items: center;
     }
 
-        nav ul li {
-            margin: 5px 0;
-        }
+    nav ul li {
+        margin: 5px 0;
+    }
 
     header h1 {
         font-size: 2rem;
